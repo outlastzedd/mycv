@@ -1,0 +1,265 @@
+/* @font-face {
+    font-family: montserrat;
+    font-weight: bold;
+    src: url('montserrat/Montserrat-Bold.otf');
+} */
+
+@font-face {
+    font-family: montserrat;
+    src: url('montserrat/Montserrat-Regular.otf');
+    font-weight: normal;
+}
+
+/* @font-face {
+    font-family: montserrat;
+    src: url('montserrat/Montserrat-Black.otf');
+    font-weight: bolder;
+} */
+
+body {
+    margin: 0px;
+}
+
+.cv-document {
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+
+    padding: 40px;
+}
+
+.avatar {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+/*hr{
+    border-bottom: groove;  
+    border-width: 4px;
+    
+}*/
+
+* {
+    box-sizing: border-box;
+}
+
+#button-test
+{
+    background-color: #04AA6D; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    transition-duration: 0.5s;
+    border-bottom: 50px;
+    border-bottom-color: #ff0000;
+}
+
+.box {
+    background: linear-gradient(
+        90deg,
+        rgb(255, 68, 68), 
+        rgb(82, 243, 255), 
+        rgb(0, 255, 106), 
+        rgb(252, 186, 64), 
+        rgb(255, 87, 255), 
+        rgb(253, 253, 78)
+        );
+    margin-top: 10px;
+    height: 4px;
+    border: 0;
+    position: relative;
+    border-radius: 10px;
+    animation: gradient 1s infinite linear;
+    box-shadow: black 0 0 1px 0.5px;
+}
+
+.box::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    filter: blur(4px);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: montserrat;
+    font-size: 175%;
+    margin-bottom: -1px;
+}
+
+.section-subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-color: black;
+    font-family: montserrat;
+    font-size: 125%;
+    margin-bottom: 0px;
+}
+
+#year {
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.section-content {
+    line-height: 125%;
+    text-align: justify;
+    font-size: normal;
+    font-family: montserrat;
+    font-size: 115%;
+    letter-spacing: 100;
+}
+
+.about-section-title {
+    font-family: montserrat;
+    font-weight: bolder;
+    font-size: 200%;
+    color: #0e2452;
+}
+
+.about-section-div p {
+    display: inline-block;
+    line-height: 0.1;
+}
+
+.about-info-content {
+    text-align: left;
+    width: 20%;
+    margin-left: -250px;
+    font-family: montserrat;
+    font-weight: normal;
+}
+
+.about-info-title {
+    text-align: left;
+    width: 50%;
+    font-weight: bold;
+    font-weight: 300px;
+    font-family: montserrat;
+}
+
+.section-div p {
+    display: inline-block;
+    line-height: 0.1;
+    
+}
+
+.section-div {
+    border-color: black;
+    border-bottom: groove;  
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.info-title {
+    margin-top: 25px;
+    margin-right: 0px;
+    text-align: left;
+    width: 20%;
+    font-weight: bold;
+    font-weight: 300px;
+    font-family: montserrat;
+    font-size: 115%;
+}
+
+.info-content {
+    width: 70%;
+    text-align: left;
+    font-family: montserrat;
+    font-weight: normal;
+    font-size: normal;
+    font-size: 115%;
+    margin-left: 15px;
+}
+
+.info-content-ul {
+    width: 90%;
+    text-align: left;
+    font-family: montserrat;
+    font-weight: normal;
+    font-size: normal;
+    font-size: 115%;
+    margin-left: 15px;
+}
+
+.info-subcontent {
+    width: 100%;
+    text-align: left;
+    font-family: montserrat;
+    font-weight: normal;
+    font-size: normal;
+    font-size: 115%;
+    margin-left: 180px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 100);
+}
+
+a:hover {
+    color: blue;
+}
+
+#banner {
+    margin-left: 23px;
+}
+
+#logo {
+    margin-bottom: 30px;
+    margin-left: -10px;
+}
+
+#sino-banner {
+    margin-top: auto;
+    margin-left: 22px;
+    margin-bottom: 0px
+}
+
+#sino-logo {
+    margin-bottom: -90px;
+    margin-left: -10px;
+}
